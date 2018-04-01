@@ -1,4 +1,4 @@
-package com.example.nangutask;
+package com.example.nangutask.controller;
 
 import com.example.nangutask.model.Author;
 import com.example.nangutask.model.Message;
