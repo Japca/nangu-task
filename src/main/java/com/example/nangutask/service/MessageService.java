@@ -12,7 +12,7 @@ public interface MessageService {
 
 	Message create(Message message);
 
-	Message updateMessage();
+	Message update(Message message, Long messageId);
 
 	void deleteMessage(Long messageId);
 }

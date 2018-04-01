@@ -17,7 +17,6 @@ public class Message {
 	@Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "message_id_seq")
 	@SequenceGenerator(allocationSize = 1, name = "message_id_seq", sequenceName = "message_id_seq")
-//	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 
 	private String text;

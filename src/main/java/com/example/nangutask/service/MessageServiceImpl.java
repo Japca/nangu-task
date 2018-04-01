@@ -28,10 +28,15 @@ public class MessageServiceImpl implements MessageService {
 	}
 
 	@Override
-	public Message updateMessage() {
-		return null;
-	}
+	public Message update(Message message, Long messageId) {
+		Message foundMessage = messageDao.findById(messageId).orElse(null);
+		if(foundMessage == null) {
+			return null;
+		}
 
+		foundMessage.setText(message.getText());
+		return messageDao.save(foundMessage);
+	}
 	@Override
 	public void deleteMessage(Long messageId) {
 		messageDao.deleteById(messageId);
