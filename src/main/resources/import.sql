@@ -1,0 +1,7 @@
+-- insert into author (id, name) values (1, 'authorOne')
+-- insert into author (id, name) values (2, 'authorTwo')
+--
+-- insert into message (id, text, author_id) values (1, 'message text1 authorOne', 1)
+-- insert into message (id, text, author_id ) values (2, 'message text2 authorOne', 1)
+-- insert into message (id, text, author_id ) values (3, 'message text1 authorTwo', 2)
+-- insert into message (id, text, author_id ) values (4, 'message text2 authorTwo', 2)
